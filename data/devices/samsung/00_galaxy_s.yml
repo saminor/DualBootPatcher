@@ -719,6 +719,63 @@
     default_brightness: 162
     pixel_format: BGRA_8888
     theme: portrait_hdpi
+    
+    - name: samsung SM-G920F
+  id: zeroflte
+  codenames:
+      - SM-G920F
+      - zeroflte
+  architecture: 
+  block_devs:
+    base_dirs:
+      - /dev/block/platform/15570000.ufs/by-num
+      - /dev/block/bootdevice/by-num
+    system:
+      - /dev/block/bootdevice/by-num/system
+    cache:
+      - /dev/block/bootdevice/by-num/cache
+    data:
+      - /dev/block/bootdevice/by-num/userdata
+    boot:
+      - /dev/block/bootdevice/by-num/boot
+    recovery:
+      - /dev/block/bootdevice/by-num/recovery
+    extra:
+      - /dev/block/platform/15570000.ufs/by-name/EFS
+      - /dev/block/platform/15570000.ufs/by-name/RADIO
+      - /dev/block/platform/15570000.ufs/by-num/p1
+      - /dev/block/platform/15570000.ufs/by-num/p10
+      - /dev/block/platform/15570000.ufs/by-num/p11
+      - /dev/block/platform/15570000.ufs/by-num/p12
+      - /dev/block/platform/15570000.ufs/by-num/p13
+      - /dev/block/platform/15570000.ufs/by-num/p14
+      - /dev/block/platform/15570000.ufs/by-num/p15
+      - /dev/block/platform/15570000.ufs/by-num/p16
+      - /dev/block/platform/15570000.ufs/by-num/p17
+      - /dev/block/platform/15570000.ufs/by-num/p18
+      - /dev/block/platform/15570000.ufs/by-num/p2
+      - /dev/block/platform/15570000.ufs/by-num/p3
+      - /dev/block/platform/15570000.ufs/by-num/p4
+      - /dev/block/platform/15570000.ufs/by-num/p5
+      - /dev/block/platform/15570000.ufs/by-num/p6
+      - /dev/block/platform/15570000.ufs/by-num/p7
+      - /dev/block/platform/15570000.ufs/by-num/p8
+      - /dev/block/platform/15570000.ufs/by-num/p9
+      - /dev/block/mmcblk1
+      - /dev/block/mmcblk1p1
+ 
+  boot_ui:
+    supported: true
+    flags:
+      - TW_GRAPHICS_FORCE_USE_LINELENGTH
+    brightness_path: 
+    max_brightness: 255
+    default_brightness: 168
+    cpu_temp_path: /sys/devices/virtual/thermal/thermal_zone0/temp
+    battery_path: /sys/class/power_supply/battery/capacity
+    graphics_backends:
+      - fbdev
+    theme: portrait_hdpi
 
 - name: Samsung Galaxy S6 Flat/Edge
   id: zerolte
